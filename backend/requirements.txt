@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+hashids
+sqlalchemy
+psycopg2-binary
+python-dotenv
+pydantic[email]
+redis

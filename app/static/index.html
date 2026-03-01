@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapLink | Modern URL Shortener</title>
+    <meta name="description" content="Fast, secure, and beautiful URL shortening for the modern web.">
+
+    <!-- Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>SnapLink</h1>
+            <p class="tagline">The modern URL shortener for high-impact social sharing and internal business efficiency.
+            </p>
+        </header>
+
+        <main>
+            <section class="glass-card">
+                <div class="input-area">
+                    <div class="input-wrapper">
+                        <input type="url" id="url-input" placeholder="Paste your long link here..." required
+                            autocomplete="off">
+                        <button id="shorten-btn" type="submit">Shorten</button>
+                    </div>
+                </div>
+
+                <div class="result-area">
+                    <div class="short-url-box">
+                        <span class="short-url-text">snap.link/abc1234</span>
+                        <span class="copy-hint" id="copy-hint">Click to Copy</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats display (static placeholders for UI) -->
+            <section class="stats-grid">
+                <div class="glass-card stat-card">
+                    <span class="stat-value">62^7</span>
+                    <span class="stat-label">Combinations</span>
+                </div>
+                <div class="glass-card stat-card">
+                    <span class="stat-value">
+                        < 1ms</span>
+                            <span class="stat-label">Redis Latency</span>
+                </div>
+                <div class="glass-card stat-card">
+                    <span class="stat-value">Hashids</span>
+                    <span class="stat-label">Encryption</span>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 SnapLink | Built with FastAPI, PostgreSQL & Redis</p>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
